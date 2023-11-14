@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WK12 Web Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>First Web Form</h1>
+    <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+        <fieldset>
+            <legend>Name Information:</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="Please type your first name" name="firstName">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" placeholder="Please type your last name" name="lastName">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Contact Information:</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" tabindex="5" placeholder="Please type your email address" name="email">
+            <label for="telephone">Phone:</label>
+            <input type="tel" id="telephone" tabindex="4" value="(670)1234567" placeholder="Please enter your phone number" name="telephone">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Date Information:</legend>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" placeholder="Enter your birthdate" tabindex="6" name="dob" required>
+            <label for="today">Today's Date:</label>
+            <input type="date" id="today" placeholder="Enter today's date" tabindex="3" value="2023-11-15" name="today">
+        </fieldset>
+        <br>
+        <fieldset>
+            <input tabindex="7" type="submit">
+        </fieldset>
+    </form>
+    <iframe name="cgi-results" id="cgi-results"></iframe>
+    
+</body>
+</html>
